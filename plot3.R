@@ -15,7 +15,7 @@ meter <- data %>%
   ggplot(aes(x = rep(1:2880, 3), y = value, col = index)) +
   geom_line() +
   scale_x_continuous(breaks = c(1, 1440, 2880), labels = c('Thu', 'Fri', 'Sat')) +
-  labs(x = NULL, y = 'Energy sub meeting') +
+  labs(x = NULL, y = 'Energy sub metering') +
   scale_color_manual(values=c("black", "red", "blue")) +
   theme(legend.position = c(0.85, 0.9), legend.title = element_blank())
 
